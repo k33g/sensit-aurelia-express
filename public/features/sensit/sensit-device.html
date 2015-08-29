@@ -1,0 +1,20 @@
+<template>
+  <h3>${message}</h3>
+  <h4>${deviceInformations.id}-${deviceInformations.serial_number}-${deviceInformations.config_status}</h4>
+
+  <table>
+    <tr>
+      <th>Id</th>
+      <th>Type</th>
+      <th>Period</th>
+      <th>Threshold</th>
+    </tr>
+    <tr repeat.for="sensor of deviceInformations.sensors">
+      <td><a route-href="route:sensor_details; params.bind:{deviceid:sensor.deviceid, sensorid:sensor.id}">${sensor.id}</a></td>
+      <td>${sensor.sensor_type}</td>
+      <td>${sensor.config.period}</td>
+      <td>${sensor.config.threshold}</td>
+    </tr>
+  </table>
+
+</template>

@@ -1,0 +1,16 @@
+<template>
+  <h3>Sensor n°${sensorid} of device n°${deviceid} / ${sensorInformations.sensor_type}</h3>
+  <table>
+    <tr>
+      <th>Date</th>
+      <th>Period</th>
+      <th>Data</th>
+    </tr>
+    <tr repeat.for="mesure of sensorInformations.history">
+      <td>${mesure.date}</td>
+      <td>${mesure.date_period}</td>
+      <td>${mesure.data}</td>
+    </tr>
+  </table>
+
+</template>

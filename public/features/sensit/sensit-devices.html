@@ -1,0 +1,23 @@
+<template>
+
+  <h3>You have ${devicesInformations.data.length} device(s).</h3>
+
+  <table>
+    <tr>
+      <th>Id</th>
+      <th>S/N</th>
+      <th>Activation</th>
+      <th>Last comm°</th>
+      <th>Mode</th>
+      <th>Last config°</th>
+    </tr>
+    <tr repeat.for="device of devicesInformations.data">
+      <td><a route-href="route:device_details; params.bind:{id:device.id}">${device.id}</a></td>
+      <td>${device.serial_number}</td>
+      <td>${device.activation_date}</td>
+      <td>${device.last_comm_date}</td>
+      <td>${device.mode}</td>
+      <td>${device.last_config_date}</td>
+    </tr>
+  </table>
+</template>
