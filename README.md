@@ -1,12 +1,12 @@
+#Sens'it-Aurelia-Express
 
-
+Thanks to [@anthonny_q](https://twitter.com/anthonny_q) and his [https://github.com/anthonny/sensit-api](https://github.com/anthonny/sensit-api)
 
 ##Prerequisites
 
 - npm, node
 - jspm
 - babel-node
-
 
 ##Installation
 
