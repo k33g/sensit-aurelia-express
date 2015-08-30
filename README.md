@@ -23,7 +23,7 @@ First, set Sens'it token to `token.js`:
 
 Then,
 
-    babel-node app.js
+    babel-node --stage 0 -- app.js
     # or nodemon --exec babel-node --stage 0 -- app.js
 
 Finally, open [http://localhost:8080](http://localhost:8080)
