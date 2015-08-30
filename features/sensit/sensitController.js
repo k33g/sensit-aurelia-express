@@ -2,6 +2,12 @@ import express from 'express';
 import Sensit from 'sensit-api';
 import token from './../../token';
 
+/*
+TODO: try decorators
+http://shellmonger.com/2015/07/30/node-mvc-controllers-and-ecmascript-2015/
+*/
+
+
 class SensitController {
   router = express.Router();
   sensitClient = new Sensit({token: token.value});
